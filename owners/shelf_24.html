@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Infomation | 一箱本棚MEGURU</title>
+  <title>貝塚建具店 | 一箱本棚MEGURU</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { background: #FAFAF8; font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN', 'Hiragino Sans', sans-serif; color: #333; min-height: 100vh; }
@@ -16,13 +16,15 @@
     .back-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 0.82rem; color: #C9A0B8; text-decoration: none; margin-bottom: 24px; padding: 6px 14px; border: 1px solid #E8C9D8; border-radius: 20px; background: #fff; transition: background 0.15s; }
     .back-btn:hover { background: #FDF6FB; }
     .detail-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 16px rgba(0,0,0,0.06); }
-    .card-top-bar { height: 5px; background: #A0C9A0; }
+    .card-top-bar { height: 5px; background: linear-gradient(90deg, #EDD9C8 0%, #D9CCB8 50%, #C4D9C4 100%); }
     .card-inner { padding: 28px 32px; }
-    .style-badge { display: inline-block; font-size: 0.72rem; font-weight: 600; padding: 3px 10px; border-radius: 12px; margin-bottom: 14px; letter-spacing: 0.04em; background: #F6FBF6; border: 1px solid #C0DCC0; color: #3D7A50; }
-    .shelf-title { font-size: 1.6rem; font-weight: 700; color: #222; line-height: 1.3; margin-bottom: 20px; }
+    .style-badge { display: inline-block; font-size: 0.72rem; font-weight: 600; padding: 3px 10px; border-radius: 12px; margin-bottom: 14px; letter-spacing: 0.04em; background: #FAF5EF; border: 1px solid #D9CCB8; color: #7A6040; }
+    .shelf-title { font-size: 1.6rem; font-weight: 700; color: #222; line-height: 1.3; margin-bottom: 4px; }
+    .shelf-owner-name { font-size: 1rem; color: #666; margin-bottom: 20px; }
     .meta-grid { display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; margin-bottom: 24px; }
     .meta-label { color: #AAAAAA; font-size: 0.78rem; align-self: center; }
     .meta-value { color: #444; font-size: 0.88rem; }
+    .shelf-photo { width: 100%; border-radius: 8px; margin-bottom: 24px; object-fit: cover; max-height: 320px; }
     .description-section { border-top: 1px solid #F0EEE8; padding-top: 20px; }
     .description-label { font-size: 0.78rem; color: #AAAAAA; margin-bottom: 8px; letter-spacing: 0.04em; }
     .description-text { font-size: 0.9rem; color: #444; line-height: 1.8; }
@@ -43,15 +45,17 @@
   <div class="detail-card">
     <div class="card-top-bar"></div>
     <div class="card-inner">
-      <span class="style-badge">展示 Exhibition</span>
-      <h1 class="shelf-title">Infomation</h1>
+      <span class="style-badge">出店 Shop</span>
+      <h1 class="shelf-title">貝塚建具店</h1>
+      <p class="shelf-owner-name">貝塚建具店</p>
+      <img src="../images/shelf_24.png" alt="貝塚建具店" class="shelf-photo">
       <div class="meta-grid">
         <span class="meta-label">棚番号</span><span class="meta-value">i-3</span>
-        <span class="meta-label">テーマ</span><span class="meta-value">お知らせ棚。</span>
+        <span class="meta-label">テーマ</span><span class="meta-value">貝塚建具店の手仕事</span>
       </div>
       <div class="description-section">
         <div class="description-label">紹介文</div>
-        <p class="description-text">イベント、営業案内、募集情報など。</p>
+        <p class="description-text">組子のコースター</p>
       </div>
     </div>
   </div>
