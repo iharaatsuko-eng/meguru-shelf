@@ -20,14 +20,23 @@
     .card-inner { padding: 28px 32px; }
     .style-badge { display: inline-block; font-size: 0.72rem; font-weight: 600; padding: 3px 10px; border-radius: 12px; margin-bottom: 14px; letter-spacing: 0.04em; background: #F6FBF6; border: 1px solid #C0DCC0; color: #3D7A50; }
     .shelf-title { font-size: 1.6rem; font-weight: 700; color: #222; line-height: 1.3; margin-bottom: 4px; }
-    .shelf-owner-name { font-size: 1rem; color: #666; margin-bottom: 20px; }
+    .shelf-owner-name { font-size: 1rem; color: #666; margin-bottom: 8px; }
+    .shelf-intro { font-size: 0.88rem; color: #666; line-height: 1.7; margin-bottom: 20px; }
     .meta-grid { display: grid; grid-template-columns: auto 1fr; gap: 8px 16px; margin-bottom: 24px; }
     .meta-label { color: #AAAAAA; font-size: 0.78rem; align-self: center; }
     .meta-value { color: #444; font-size: 0.88rem; }
     .shelf-photo { width: 100%; border-radius: 8px; margin-bottom: 24px; object-fit: cover; max-height: 320px; }
-    .description-section { border-top: 1px solid #F0EEE8; padding-top: 20px; }
-    .description-label { font-size: 0.78rem; color: #AAAAAA; margin-bottom: 8px; letter-spacing: 0.04em; }
-    .description-text { font-size: 0.9rem; color: #444; line-height: 1.8; }
+    .section { border-top: 1px solid #F0EEE8; padding-top: 20px; margin-top: 20px; }
+    .section-label { font-size: 0.78rem; color: #AAAAAA; margin-bottom: 10px; letter-spacing: 0.04em; }
+    .section-text { font-size: 0.9rem; color: #444; line-height: 1.9; }
+    .thought-section { background: #F7F2ED; border-radius: 8px; padding: 18px 20px; border-left: 4px solid #EDD9C8; }
+    .sns-list { display: flex; flex-direction: column; gap: 10px; }
+    .sns-link { display: inline-flex; align-items: center; gap: 10px; font-size: 0.88rem; color: #5A7A5A; text-decoration: none; padding: 9px 16px; border-radius: 8px; background: #F1F7F1; border: 1px solid #C4D9C4; transition: background 0.15s; }
+    .sns-link:hover { background: #E2EEE2; }
+    .sns-icon { font-size: 1.1rem; }
+    .message-box { background: #FAFAF8; border: 1px solid #EDD9C8; border-radius: 8px; padding: 20px 22px; }
+    .message-box p { font-size: 0.9rem; color: #555; line-height: 2; }
+    .message-signature { margin-top: 14px; font-size: 0.82rem; color: #999; text-align: right; }
   </style>
 </head>
 <body>
@@ -48,14 +57,38 @@
       <span class="style-badge">展示 Exhibition</span>
       <h1 class="shelf-title">onakama対話食堂</h1>
       <p class="shelf-owner-name">林仁美</p>
+      <p class="shelf-intro">千葉県成田市出身、神奈川県相模原市在住。1984年生まれ。一人娘の母。手放す経営ラボラトリーを通じて世界が開き、自分の内側にある願い、自然の摂理に沿った生き方を実験中！</p>
       <img src="../images/shelf_20.png" alt="onakama対話食堂" class="shelf-photo">
       <div class="meta-grid">
         <span class="meta-label">棚番号</span><span class="meta-value">K-6</span>
         <span class="meta-label">テーマ</span><span class="meta-value">卵・鶏、そして愛</span>
       </div>
-      <div class="description-section">
-        <div class="description-label">紹介文</div>
-        <p class="description-text">愛に生きる</p>
+      <div class="section">
+        <div class="section-label">この本棚に込めた想い</div>
+        <div class="thought-section">
+          <p class="section-text">Onakama対話食堂は、身も心も喜ぶ美味しい食事をしながら、卵と鶏をテーマに置いた対話によって自分の命を言語化し合うことで、自分の中にある愛や才能に触れる、そんな場を目指しています。</p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-label">つながる</div>
+        <div class="sns-list">
+          <a href="https://www.instagram.com/onakamans_labo/" class="sns-link" target="_blank" rel="noopener">
+            <span class="sns-icon">📷</span> Instagram @onakamans_labo
+          </a>
+          <a href="https://note.com/hitchan/n/n639deaacded5" class="sns-link" target="_blank" rel="noopener">
+            <span class="sns-icon">📝</span> note.com/hitchan
+          </a>
+          <a href="https://mire-garden-a9b.notion.site/Onakama-2cc16b1efcdb4724b409f9fc01b91c49" class="sns-link" target="_blank" rel="noopener">
+            <span class="sns-icon">🌐</span> Onakama ウェブサイト
+          </a>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-label">訪れてくれた方へ</div>
+        <div class="message-box">
+          <p>茨城には美味しい卵もありますし、卵好きも多い印象です。眩い魂が集うTAKiBiBAで、卵を囲んでまた対話する機会に巡り合えるようにと本棚を置かせていただいています。またOnakamaな皆さんにお会いできる日を楽しみにしています！</p>
+          <p class="message-signature">— 林仁美</p>
+        </div>
       </div>
     </div>
   </div>
